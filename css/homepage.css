@@ -1,0 +1,259 @@
+/*This code is applied on the whole page*/
+* {
+    font-family: PT S, PT Serif, sans-serif, PT Serif, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #242F35;
+    margin: 0;
+}
+
+/*This code is for the navigation bar*/
+
+header {
+    border: 2px solid black;
+    width: 100%;
+    float: left;
+    position: fixed;
+    padding: 0;
+    max-height: 9vw;
+    background-color: #182024;
+    top: 0;
+    z-index: 1;
+}
+
+.navbarButton {
+    position: relative;
+    top: -2vw;
+    right: -50vw;
+    float: unset;
+}
+
+.navbarButton a {
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 1%;
+    color: white !important;
+    font-size: 15px !important;
+    padding: 5px;
+}
+
+.navbarButton a:hover {
+    background-color: #555;
+    color: white;
+}
+
+img.logo {
+    width: 110px;
+    height: 100px;
+    top: 9px;
+    position: relative;
+    right: -1vw;
+}
+
+.WellbeeingHeaderTitle {
+    font-size: 25px;
+    width: min-content;
+    position: absolute;
+    right: 81%;
+    top: 49%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #FFC640;
+}
+
+.WellbeeingTitleWord {
+    position: relative;
+    left: 12vw;
+    top: -2vw;
+}
+
+.shoppingCartImage {
+    width: 45px;
+    height: 40px;
+}
+
+a.shoppingCartButton {
+    top: -6vw;
+    left: -4vw;
+    float: right;
+    position: relative;
+    width: 4%;
+}
+
+.shoppingCartButton:hover {
+    background-color: #FFC72C;
+    border-radius: 2px;
+    min-width: 2px;
+}
+
+
+.searchbar {
+    position: relative;
+    left: 27vw;
+    top: -3vw;
+    height: 0;
+}
+
+input.searchBarfield {
+    font-size: inherit;
+    border: 2px solid black;
+    max-height: fit-content;
+}
+
+.searchBarIcon {
+    position: relative;
+    bottom: -7px;
+    left: -30px;
+    height: 21px;
+    border: 2px solid black;
+}
+
+.navHeader {
+    border: 2px solid black;
+    position: relative;
+    top: -8px;
+    left: -3px;
+    max-width: 100%;
+    height: 2vw;
+    background-color: #FFC72C;
+}
+
+.navHeader a {
+    text-decoration: none;
+    padding: 0 1vw 7px;
+    color: black;
+    font-weight: bold;
+}
+
+.navHeader a:hover {
+    background-color: #262626;
+    color: white;
+}
+
+/*This code is for the products*/
+.bodysection {
+    padding: 4vw 5vw 1vw 16vw;
+    margin: 5% 0 6vw 1vw;
+}
+
+.flexproductTd1, .flexproductTd2, .flexproductTd3 {
+
+}
+
+.flexproductTd4, .flexproductTd5, .flexproductTd6, .flexproductTd7, .flexproductTd8, .flexproductTd9 {
+
+}
+
+img.productImg1, img.productImg2, img.productImg3 {
+    width: 10vw;
+    border: 2px solid black;
+}
+
+img.productImg4, img.productImg5, img.productImg6, img.productImg7, img.productImg8, img.productImg9 {
+    width: 10vw;
+    border: 2px solid black;
+    margin: 0px 0px -17px;
+    background-color: white;
+}
+
+tbody td .flexProduct4{
+    height: 1vh;
+}
+
+.flexProduct1, .flexProduct2, .flexProduct3, .flexProduct4, .flexProduct5, .flexProduct6, .flexProduct7, .flexProduct8, .flexProduct9{
+    padding: 10px;
+}
+
+.flexProductsText1, .flexProductsText2, .flexProductsText3, .flexProductsText4, .flexProductsText5, .flexProductsText6, .flexProductsText7, .flexProductsText8, .flexProductsText9 {
+    font-size: 11px;
+    color: #FFC640;
+}
+
+table {
+    padding: 4%;
+}
+
+tr, td {
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.productLookButton1, .productLookButton2, .productLookButton3, .productLookButton4, .productLookButton5, .productLookButton6, .productLookButton7, .productLookButton8, .productLookButton9 {
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 10px;
+    overflow: hidden;
+    margin-top: 32px;
+    margin-left: -10px;
+    background-color: #182024;
+}
+
+
+button.productLookButton1:hover, button.productLookButton2:hover, button.productLookButton3:hover, button.productLookButton4:hover, button.productLookButton5:hover, button.productLookButton6:hover, button.productLookButton7:hover, button.productLookButton8:hover,.productLookButton9:hover {
+    background-color: black;
+    color:white;
+}
+
+.productLookButton1 a, .productLookButton2 a, .productLookButton3 a, .productLookButton4 a, .productLookButton5 a, .productLookButton6 a, .productLookButton7 a, .productLookButton8 a, .productLookButton9 a {
+    color: #FFC640;
+}
+
+.productLookButton1 a:hover, .productLookButton2 a:hover, .productLookButton3 a:hover, .productLookButton4 a:hover, .productLookButton5 a:hover, .productLookButton6 a:hover, .productLookButton7 a:hover, .productLookButton8 a:hover, .productLookButton9 a:hover {
+    color: #fff;
+}
+
+details {
+    background-color: #FFC640;
+    font-size: 15px;
+    border: 1px solid black;
+    position: relative;
+    bottom: -3vw;
+    float: right;
+    overflow: hidden;
+    width: 17%;
+    padding: 1vw;
+}
+
+.SortListHead {
+    font-weight: 600;
+}
+
+.SortListParagraph {
+    text-decoration: none;
+    color: black;
+}
+
+.SortListParagraph:hover, .SortListItem1:hover, .SortListItem2:hover, .SortListItem3:hover {
+    background-color: #262626;
+    color: white !important;
+}
+
+.SortListItem1, .SortListItem2, .SortListItem3 {
+    background-color: #FFC640;
+    border: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+summary::after {
+    content: '';
+}
+
+details[open] summary:after {
+    content: '';
+}
+
+/*This code is for the footer*/
+
+footer {
+    background-color: #182024;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 46vh;
+}

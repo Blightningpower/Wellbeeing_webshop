@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OPP Webshop Aanmelden</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    /*This code is applied on the whole page*/
+
+    body {
+      background-color: #242F35;
+    }
+
+    /*This code is for the navigation bar*/
+
+    ol.navBorder {
+      background-color: #00A6FF;
+      border: 2px solid black;
+      margin-top: -20px;
+      margin-left: -8px;
+      width: 100%;
+      float: left;
+      position: absolute;
+      white-space: nowrap;
+      line-height: 300%;
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    li {
+      margin: 5px;
+      display: inline;
+    }
+
+    li a {
+      background-color: black;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 8px;
+      padding: 6px;
+      color: white !important;
+      font-family: bold, Impact, sans-serif;
+      font-size: 15px !important;
+      position: relative;
+      top: -25px;
+    }
+
+    li a:hover {
+      background-color: #555;
+      color: white;
+    }
+
+    img.logo {
+      width: 140px;
+      height: 80px;
+      margin-top: 5px;
+    }
+
+    /*This code is for the sign-up form*/
+
+    label {
+      margin-left: 10px;
+    }
+
+    #fName,
+    #insertion,
+    #lName, #eMail, #pNumber, #country, #province, #city, #street, #hNumber, #pCode, #pWord, #ConfirmpWord {
+      margin: 8px;
+      width: 90%;
+      border-radius: 25px;
+    }
+
+    table {
+      position: absolute;
+      bottom: 7em;
+    }
+
+    .sButton {
+      background-color: white;
+      color: #033483;
+      border: 3px solid #033483;
+      font-weight: bold;
+      font-size: 12px;
+      overflow: hidden;
+      margin-top: 36em;
+      margin-left: 78em;
+    }
+
+    .sButton:hover {
+      background-color: #033483;
+      color: white;
+    }
+
+    [alt="noStyle1"] {
+      text-decoration: none;
+      color: white;
+    }
+
+    /*This code is for the footer*/
+
+    footer {
+      background-color: #00A6FF;
+      border: 2px solid black;
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+      height: 21px;
+      margin-top: 89px;
+      margin-left: -8px;
+      float: left;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      white-space: nowrap;
+      line-height: 300%;
+    }
+
+  </style>
+</head>
+<body>
+
+<!--This code is for the navigation bar-->
+
+<ol class="navBorder">
+
+  <li><img class="logo" src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/Logo%202.5%20cut.png" alt=""></li>
+  <li><a href="index.html" alt="noStyle1">Webshop</a></li>
+  <li><a href="signUp.html" alt="noStyle1">Aanmelden</a></li>
+  <li><a href="logIn.html" alt="noStyle1">Inloggen</a></li>
+</ol>
+
+<h2>Vul je gegevens in</h2>
+
+<table>
+
+  <thead>
+
+  <tr>
+    <td><label for="fName">Voornaam:</label><br>
+      <input type="text" id="fName" name="fName">
+    </td>
+    <td><label for="insertion">Tussenvoegsel:</label><br>
+      <input type="text" id="insertion" name="insertion">
+    </td>
+    <td><label for="lName">Achternaam:</label><br>
+      <input type="text" id="lName" name="lName">
+    </td>
+  </tr>
+
+  <tr>
+    <td><label for="eMail">E-mailadres:</label><br>
+      <input type="text" id="eMail" name="eMail">
+    </td>
+    <td><label for="pNumber">Telefoonnummer:</label><br>
+      <input type="number" id="pNumber" name="pNumber">
+    </td>
+  </tr>
+
+  </thead>
+  <tbody>
+
+  <tr>
+    <td><label for="country">Land:</label><br>
+      <input type="text" id="country" name="country">
+    </td>
+    <td><label for="province">Provincie:</label><br>
+      <input type="text" id="province" name="province">
+    </td>
+  </tr>
+  <tr>
+    <td><label for="city">Stad:</label><br>
+      <input type="text" id="city" name="city">
+    </td>
+    <td><label for="street">Straat:</label><br>
+      <input type="text" id="street" name="street">
+    </td>
+    <td><label for="hNumber">Huisnummer:</label><br>
+      <input type="number" id="hNumber" name="hNumber">
+    </td>
+    <td><label for="pCode">Postcode:</label><br>
+      <input type="text" id="pCode" name="pCode">
+    </td>
+  </tr>
+
+  </tbody>
+  <tfoot>
+
+  <tr>
+    <td><label for="pWord">Nieuw wachtwoord:</label><br>
+      <input type="password" id="pWord" name="pWord">
+    </td>
+    <td><label for="ConfirmpWord">Bevestig wachtwoord:</label><br>
+      <input type="password" id="ConfirmpWord" name="ConfirmpWord">
+    </td>
+
+  </tfoot>
+
+</table>
+
+<input type="submit" class="sButton" value="Aanmelden">
+
+<footer></footer>
+
+</body>
+</html>
