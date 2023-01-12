@@ -1,0 +1,128 @@
+/*This code is applied on the whole page*/
+
+body {
+    background-color: #242F35;
+    margin-bottom: 60px;
+    margin-left: 4px;
+}
+
+/*This code is for the navigation bar*/
+
+ol.navBorder {
+    background-color: #00A6FF;
+    border: 2px solid black;
+    margin-top: -9px;
+    margin-left: -8px;
+    width: 100%;
+    float: left;
+    position: absolute;
+    white-space: nowrap;
+    line-height: 300%;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    margin: 5px;
+    display: inline;
+}
+
+li a {
+    background-color: black;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 6px;
+    color: white !important;
+    font-family: bold, Impact, sans-serif;
+    font-size: 15px !important;
+    position: relative;
+    top: -25px;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+img.logo {
+    width: 140px;
+    height: 80px;
+    margin-top: 5px;
+}
+
+/*This code is for the login form*/
+
+#logo {
+    width: 28%;
+    position: absolute;
+    right: 37%;
+    top: 20%;
+}
+
+#eMail, #pWord {
+    margin: 3px;
+    width: 93%;
+    border-radius: 25px;
+    position: relative;
+    right: 0em;
+}
+
+.uNameText {
+    position: relative;
+    right: -1em;
+}
+
+.pWordText {
+    position: relative;
+    right: -1em;
+}
+
+.sButton {
+    background-color: white;
+    color: #033483;
+    border: 3px solid #033483;
+    font-weight: bold;
+    font-size: 12px;
+    overflow: hidden;
+    /* margin-top: 32px; */
+    margin-left: 44px;
+}
+
+.sButton:hover {
+    background-color: #033483;
+    color: white;
+}
+
+.centerItems {
+    max-width: 30%;
+    height: 30%;
+    position: absolute;
+    left: 42%;
+    top: 55%;
+}
+
+/*This code is for the footer*/
+
+.navBorderFoot {
+    background-color: #00A6FF;
+    border: 2px solid black;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    height: 21px;
+    margin-top: 89px;
+    margin-left: -8px;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 300%;
+}
+
+[alt="noStyle1"] {
+    text-decoration: none;
+    color: #033483;
+}
