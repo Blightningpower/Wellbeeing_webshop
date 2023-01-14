@@ -20,7 +20,7 @@ header {
     top: 0;
     z-index: 1;
     margin-top: -9px;
-    line-height: 0%;
+    line-height: 0;
     list-style-type: none;
     overflow: hidden;
     max-height: fit-content;
@@ -84,7 +84,7 @@ a.shoppingCartButton {
     float: right;
     position: relative;
     width: 4%;
-    padding: 0px 1px;
+    padding: 0 1px;
     border: 2px solid black;
     max-height: 9vh;
 }
@@ -117,11 +117,10 @@ input.searchBarfield {
 }
 
 .navHeader {
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     height: 2vw;
     background-color: #FFC72C;
     width: 100%;
-    float: left;
     position: fixed;
     max-height: 4%;
     top: 24%;
@@ -161,14 +160,14 @@ img.productImg1, img.productImg2, img.productImg3 {
 img.productImg4 {
     width: 10vw;
     border: 2px solid black;
-    margin: 69px 0px 0px;
+    margin: 69px 0 0;
     background-color: white;
 }
 
 img.productImg5, img.productImg6, img.productImg7, img.productImg8, img.productImg9 {
     width: 10vw;
     border: 2px solid black;
-    margin: -20px 0px 0px;
+    margin: -20px 0 0;
     background-color: white;
 }
 
@@ -189,7 +188,7 @@ span.flexProductsText4, span.flexProductsText5, span.flexProductsText6, span.fle
     font-size: 11px;
     color: #FFC640;
     position: relative;
-    top: 0vh;
+    top: 0;
 }
 
 table {
@@ -208,7 +207,7 @@ tr, td {
     font-size: 10px;
     overflow: hidden;
     margin-top: 30px;
-    margin-left: 0px;
+    margin-left: 0;
     background-color: #182024;
 }
 
