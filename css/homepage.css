@@ -6,7 +6,7 @@
 
 body {
     background-color: #242F35;
-    margin: 0;
+    margin-top: 16vh;
 }
 
 /*This code is for the navigation bar*/
@@ -76,7 +76,7 @@ img.logo {
 .shoppingCartImage {
     width: 45px;
     height: 40px;
-    margin-top: 24%;
+    margin-top: 13%;
 }
 
 a.shoppingCartButton {
@@ -85,8 +85,9 @@ a.shoppingCartButton {
     float: right;
     position: relative;
     width: 4%;
-    padding: 0 1px 0 1px;
+    padding: 0px 1px;
     border: 2px solid black;
+    max-height: 9vh;
 }
 
 .shoppingCartButton:hover {
@@ -106,6 +107,7 @@ input.searchBarfield {
     font-size: inherit;
     border: 2px solid black;
     max-height: fit-content;
+    display: block;
 }
 
 .searchBarIcon {
@@ -146,8 +148,8 @@ input.searchBarfield {
 
 /*This code is for the products*/
 .bodysection {
-    padding: 4vw 5vw 1vw 16vw;
-    margin: 5% 0 6vw 1vw;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .flexproductTd1, .flexproductTd2, .flexproductTd3 {
@@ -162,18 +164,25 @@ img.productImg1, img.productImg2, img.productImg3 {
     border: 2px solid black;
 }
 
-img.productImg4, img.productImg5, img.productImg6, img.productImg7, img.productImg8, img.productImg9 {
+img.productImg4 {
+    width: 10vw;
+    border: 2px solid black;
+    margin: 69px 0px 0px;
+    background-color: white;
+}
+
+img.productImg5, img.productImg6, img.productImg7, img.productImg8, img.productImg9 {
     width: 10vw;
     border: 2px solid black;
     margin: -20px 0px 0px;
     background-color: white;
 }
 
-tbody td .flexProduct4{
+tbody td .flexProduct4 {
     height: 1vh;
 }
 
-.flexProduct1, .flexProduct2, .flexProduct3, .flexProduct4, .flexProduct5, .flexProduct6, .flexProduct7, .flexProduct8, .flexProduct9{
+.flexProduct1, .flexProduct2, .flexProduct3, .flexProduct4, .flexProduct5, .flexProduct6, .flexProduct7, .flexProduct8, .flexProduct9 {
     padding: 10px;
 }
 
@@ -190,12 +199,13 @@ span.flexProductsText4, span.flexProductsText5, span.flexProductsText6, span.fle
 }
 
 table {
-    padding: 4%;
+    padding: 3% 17% 10% 12%;
 }
 
 tr, td {
     text-align: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-bottom: 10%;
 }
 
 .productLookButton1, .productLookButton2, .productLookButton3 {
@@ -219,9 +229,9 @@ tr, td {
 }
 
 
-button.productLookButton1:hover, button.productLookButton2:hover, button.productLookButton3:hover, button.productLookButton4:hover, button.productLookButton5:hover, button.productLookButton6:hover, button.productLookButton7:hover, button.productLookButton8:hover,.productLookButton9:hover {
+button.productLookButton1:hover, button.productLookButton2:hover, button.productLookButton3:hover, button.productLookButton4:hover, button.productLookButton5:hover, button.productLookButton6:hover, button.productLookButton7:hover, button.productLookButton8:hover, .productLookButton9:hover {
     background-color: black;
-    color:white;
+    color: white;
 }
 
 .productLookButton1 a, .productLookButton2 a, .productLookButton3 a, .productLookButton4 a, .productLookButton5 a, .productLookButton6 a, .productLookButton7 a, .productLookButton8 a, .productLookButton9 a {
@@ -336,7 +346,7 @@ footer {
     text-align: center;
 }
 
-.footer-dark .item.social>a {
+.footer-dark .item.social > a {
     font-size: 20px;
     width: 36px;
     height: 36px;
