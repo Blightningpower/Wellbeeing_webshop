@@ -151,11 +151,10 @@ input.searchBarfield {
 }
 
 .flexproductTd1, .flexproductTd2, .flexproductTd3 {
-
+    padding-bottom: 20px;
 }
 
 .flexproductTd4, .flexproductTd5, .flexproductTd6, .flexproductTd7, .flexproductTd8, .flexproductTd9 {
-
 }
 
 img.productImg1, img.productImg2, img.productImg3 {
@@ -166,7 +165,7 @@ img.productImg1, img.productImg2, img.productImg3 {
 img.productImg4, img.productImg5, img.productImg6, img.productImg7, img.productImg8, img.productImg9 {
     width: 10vw;
     border: 2px solid black;
-    margin: 0px 0px -17px;
+    margin: -20px 0px 0px;
     background-color: white;
 }
 
@@ -178,9 +177,16 @@ tbody td .flexProduct4{
     padding: 10px;
 }
 
-.flexProductsText1, .flexProductsText2, .flexProductsText3, .flexProductsText4, .flexProductsText5, .flexProductsText6, .flexProductsText7, .flexProductsText8, .flexProductsText9 {
+.flexProductsText1, .flexProductsText2, .flexProductsText3 {
     font-size: 11px;
     color: #FFC640;
+}
+
+span.flexProductsText4, span.flexProductsText5, span.flexProductsText6, span.flexProductsText7, span.flexProductsText8, span.flexProductsText9 {
+    font-size: 11px;
+    color: #FFC640;
+    position: relative;
+    top: 0vh;
 }
 
 table {
@@ -192,13 +198,23 @@ tr, td {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.productLookButton1, .productLookButton2, .productLookButton3, .productLookButton4, .productLookButton5, .productLookButton6, .productLookButton7, .productLookButton8, .productLookButton9 {
+.productLookButton1, .productLookButton2, .productLookButton3 {
     border: 3px solid black;
     font-weight: bold;
     font-size: 10px;
     overflow: hidden;
-    margin-top: 32px;
-    margin-left: -10px;
+    margin-top: 30px;
+    margin-left: 0px;
+    background-color: #182024;
+}
+
+.productLookButton4, .productLookButton5, .productLookButton6, .productLookButton7, .productLookButton8, .productLookButton9 {
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: -5px;
     background-color: #182024;
 }
 
