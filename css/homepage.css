@@ -16,19 +16,18 @@ header {
     width: 100%;
     float: left;
     position: fixed;
-    max-height: 9vw;
     background-color: #182024;
     top: 0;
     z-index: 1;
     margin-top: -9px;
-    line-height: 300%;
+    line-height: 0%;
     list-style-type: none;
     overflow: hidden;
+    max-height: fit-content;
 }
 
 .navbarButton {
     position: relative;
-    top: -4vw;
     right: -50vw;
     float: unset;
 }
@@ -52,7 +51,7 @@ header {
 img.logo {
     width: 110px;
     height: 100px;
-    top: 9px;
+    top: 31px;
     position: relative;
     right: -1vw;
 }
@@ -62,7 +61,7 @@ img.logo {
     width: min-content;
     position: absolute;
     right: 81%;
-    top: 49%;
+    top: 55%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     color: #FFC640;
 }
@@ -76,11 +75,11 @@ img.logo {
 .shoppingCartImage {
     width: 45px;
     height: 40px;
-    margin-top: 13%;
+    margin-top: 3%;
 }
 
 a.shoppingCartButton {
-    top: -10vw;
+    top: -1vw;
     left: -4vw;
     float: right;
     position: relative;
@@ -99,7 +98,6 @@ a.shoppingCartButton {
 .searchbar {
     position: relative;
     left: 27vw;
-    top: -3vw;
     height: 0;
 }
 
@@ -112,8 +110,8 @@ input.searchBarfield {
 
 .searchBarIcon {
     position: relative;
-    bottom: -7px;
-    left: -30px;
+    bottom: 24px;
+    left: 30vh;
     height: 21px;
     border: 2px solid black;
 }
@@ -125,13 +123,9 @@ input.searchBarfield {
     width: 100%;
     float: left;
     position: fixed;
-    max-height: 9vw;
-    top: 0;
-    z-index: 1;
-    margin-top: 108px;
-    line-height: 118%;
-    list-style-type: none;
-    overflow: hidden;
+    max-height: 4%;
+    top: 24%;
+    line-height: normal;
 }
 
 .navHeader a {
@@ -247,10 +241,10 @@ details {
     font-size: 15px;
     border: 1px solid black;
     position: relative;
-    bottom: -3vw;
+    bottom: -6vw;
     float: right;
     overflow: hidden;
-    width: 17%;
+    width: 15%;
     padding: 1vw;
 }
 
