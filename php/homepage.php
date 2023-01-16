@@ -7,8 +7,8 @@ require_once('../php/CreateDb.php');
 
 $database = new CreateDb(dbname: "Productdb", tablename: "Producttb");
 
-if (isset($_POST['add'])){
-    print_r($_POST['productid']);
+if(isset($_POST['add'])){
+    print_r($_POST['product_id']);
 }
 
 ?>

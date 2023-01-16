@@ -1,7 +1,6 @@
 <?php
 
-function add_to_cart($item, $quantity): void
-{
+function add_to_cart($item, $quantity) {
     if (!isset($_SESSION['cart'])) {
         $_SESSION['cart'] = array();
     }
@@ -12,22 +11,19 @@ function add_to_cart($item, $quantity): void
     }
 }
 
-function remove_from_cart($item): void
-{
+function remove_from_cart($item) {
     if (isset($_SESSION['cart'][$item])) {
         unset($_SESSION['cart'][$item]);
     }
 }
 
-function update_cart($item, $quantity): void
-{
+function update_cart($item, $quantity) {
     if (isset($_SESSION['cart'][$item])) {
         $_SESSION['cart'][$item] = $quantity;
     }
 }
 
-function display_cart(): void
-{
+function display_cart() {
     if (empty($_SESSION['cart'])) {
         echo "Your cart is empty.";
     } else {
@@ -42,3 +38,4 @@ function display_cart(): void
         echo "</table>";
     }
 }
+?>
