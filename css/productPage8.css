@@ -1,0 +1,301 @@
+/*This code is applied on the whole page*/
+* {
+    font-family: PT S, PT Serif, sans-serif, PT Serif, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #242F35;
+    margin: 0;
+}
+
+/*This code is for the navigation bar*/
+
+header {
+    border: 2px solid black;
+    width: 100%;
+    float: left;
+    position: fixed;
+    max-height: 9vw;
+    background-color: #182024;
+    top: 0;
+    z-index: 1;
+    margin-top: -9px;
+    line-height: 300%;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbarButton {
+    position: relative;
+    top: -4vw;
+    right: -50vw;
+    float: unset;
+}
+
+.navbarButton a {
+    text-decoration: none;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 1%;
+    color: white !important;
+    font-size: 15px !important;
+    padding: 5px;
+}
+
+.navbarButton a:hover {
+    background-color: #555;
+    color: white;
+}
+
+img.logo {
+    width: 110px;
+    height: 100px;
+    top: 9px;
+    position: relative;
+    right: -1vw;
+}
+
+.WellbeeingHeaderTitle {
+    font-size: 25px;
+    width: min-content;
+    position: absolute;
+    right: 81%;
+    top: 49%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #FFC640;
+}
+
+.WellbeeingTitleWord {
+    position: relative;
+    left: 12vw;
+    top: -2vw;
+}
+
+.shoppingCartImage {
+    width: 45px;
+    height: 40px;
+    margin-top: 24%;
+}
+
+a.shoppingCartButton {
+    top: -10vw;
+    left: -4vw;
+    float: right;
+    position: relative;
+    width: 4%;
+    padding: 0 1px 0 1px;
+    border: 2px solid black;
+}
+
+.shoppingCartButton:hover {
+    background-color: #FFC72C;
+    border-radius: 2px;
+    height: 100%;
+}
+
+
+.searchbar {
+    position: relative;
+    left: 27vw;
+    top: -3vw;
+    height: 0;
+}
+
+input.searchBarfield {
+    font-size: inherit;
+    border: 2px solid black;
+    max-height: fit-content;
+}
+
+.searchBarIcon {
+    position: relative;
+    bottom: -7px;
+    left: -30px;
+    height: 21px;
+    border: 2px solid black;
+}
+
+.productName {
+    float: right;
+    margin-right: 5%;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 5px;
+}
+
+.sButton {
+    background-color: white;
+    color: #033483;
+    border: 3px solid #033483;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    overflow: hidden;
+    margin-top: 147px;
+    margin-left: 38em;
+}
+
+.sButton:hover {
+    background-color: #033483;
+    color: white;
+}
+
+ol.productName {
+    display: inline;
+    margin-right: 50px;
+    background-color: #D9D9D9;
+    border: 2px solid black;
+    width: 150px;
+    height: 5em;
+}
+
+li {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+li.productText {
+    font-size: 13px;
+}
+
+p.productName1 {
+    display: inline-flex;
+    margin-left: -13px;
+    margin-top: 2em;
+    font-size: 10px;
+    font-family: bold, sans-serif;
+    font-weight: 600;
+}
+
+p.productPrice {
+    display: inline-flex;
+    font-size: 11px;
+    font-family: bold, sans-serif;
+    font-weight: 600;
+    margin-left: -1em;
+}
+
+ol.productDescription {
+    display: inline;
+    margin-right: 3em;
+    background-color: #FDC43F;
+    border: 2px solid black;
+    width: 150px;
+    height: 5em;
+    float: right;
+    padding-bottom: 75px;
+}
+
+p.productText {
+    font-family: bold, sans-serif;
+    font-weight: 700;
+    color: #202020;
+    flex-wrap: nowrap;
+    float: left;
+    margin-left: -2em;
+    margin-top: 5px;
+}
+
+p.productText1 {
+    font-size: small;
+    float: left;
+    margin-left: -33px;
+}
+
+img.productImage {
+    float: left;
+    position: absolute;
+    bottom: 5em;
+    width: 23%;
+    border: 2px solid black;
+}
+
+div.numberInput {
+    padding-left: 30em;
+    position: absolute;
+    bottom: 15em;
+}
+
+[alt="noStyle1"] {
+    text-decoration: none;
+    color: white;
+}
+
+.bodysection {
+    padding: 4vw 5vw 30vw 4vw;
+    margin: 5% 0 6vw 1vw;
+}
+
+/*This code is for the footer*/
+
+/*Footer*/
+footer {
+    padding: 50px 0;
+    color: #f0f9ff;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #182024;
+    top: 0;
+    z-index: 1;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px;
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+    text-align: center;
+}
+
+.footer-dark .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+}
