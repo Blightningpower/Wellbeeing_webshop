@@ -1,3 +1,11 @@
+<?php
+
+if (isset($_POST['add'])){
+    print_r($_POST['productid']);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
