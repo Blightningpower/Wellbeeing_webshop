@@ -1,6 +1,7 @@
 <?php
 
-function component($productname, $productprice, $productimage, $productid, $productpage){
+function component($productname, $productprice, $productimage, $productid, $productpage): void
+{
     $element = 
     "<div class=\"divProductImg1\"><img class=\"productImg1\"
     src=\"$productimage\"
@@ -12,4 +13,3 @@ class=\"flexProductsText1\">$productname<br> &#8364 $productprice</span>
 echo $element;
 }
 
-?>

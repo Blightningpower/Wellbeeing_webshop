@@ -31,13 +31,13 @@
 
 
   <div class="navbarButton">
-    <a href="homepage.html">Webshop</a>
-    <a href="signUp.html">Aanmelden</a>
-    <a href="logIn.html">Inloggen</a>
+    <a href="/html/homepage.html">Webshop</a>
+    <a href="/html/signUp.html">Aanmelden</a>
+    <a href="/html/logIn.html">Inloggen</a>
   </div>
 
   <!--Navigation shoppingcart-->
-  <a href="shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
+  <a href="/html/shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
                                                               src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
                                                               alt="ShoppingCart"/></a>
 </header>
@@ -63,13 +63,13 @@
     <p class="productPrice">Prijs: €0,60</p>
   </ol>
 
-  <form action="shoppingCart.html">
+  <form action="/html/shoppingCart.html">
     <button class="sButton" type="submit">Plaats in Winkelmand</button>
   </form>
 
   <ol class="productDescription">
     <p class="productText">Productbeschrijving:</p>
-    <p class="productText1">Deze doos heeft een afmeting van 55mm x 55mm x 15mm en is momenteel alleen verkrijgbaar in
+    <p class="productText1">Deze doos heeft een afmeting van 55 mm × 55 mm × 15 mm en is momenteel alleen verkrijgbaar in
       het grijs.</p>
   </ol>
 
@@ -103,8 +103,8 @@
         <div class="col-md-6 item text">
           <h3>Well<span>bee</span>ing.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat</p>
+            labore et dolore magna aliqua. Ut enim ad minim venial, quits nostrum excitation ultimo
+            labors nisei ut aliquot ex ea common consequent</p>
         </div>
         <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
                 class="icon ion-social-twitter"></i></a><a href="#"><i

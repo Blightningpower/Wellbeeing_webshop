@@ -48,12 +48,12 @@ if (isset($_POST['add'])){
 
         <div class="navbarButton">
             <a href="homepage.php">Webshop</a>
-            <a href="signUp.html">Aanmelden</a>
-            <a href="logIn.html">Inloggen</a>
+            <a href="/html/signUp.html">Aanmelden</a>
+            <a href="/html/logIn.html">Inloggen</a>
         </div>
 
         <!--Navigation shoppingcart-->
-        <a href="shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
+        <a href="/html/shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
                 src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
                 alt="ShoppingCart" /></a>
         <div class="navHeader">

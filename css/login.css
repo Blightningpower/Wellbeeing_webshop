@@ -145,7 +145,7 @@ input.searchBarfield {
     width: 93%;
     border-radius: 25px;
     position: relative;
-    right: 0em;
+    right: 0;
 }
 
 .uNameText {

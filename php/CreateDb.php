@@ -2,12 +2,12 @@
 
 class CreateDb
 {
-    public $servername;
-    public $username;
-    public $password;
-    public $dbname;
-    public $tablename;
-    public $con;
+    public mixed $servername;
+    public mixed $username;
+    public mixed $password;
+    public mixed $dbname;
+    public mixed $tablename;
+    public mysqli|false $con;
 
     public function __construct(
         $dbname = "Newdb",
@@ -45,8 +45,6 @@ class CreateDb
 
             if (!mysqli_query($this->con, $sql)){
                 echo "Error creating table:" . mysqli_error($this->con);
-            }else{
-                false;
             }
         }
     }
