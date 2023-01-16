@@ -47,7 +47,7 @@ if (isset($_POST['add'])){
 
 
         <div class="navbarButton">
-            <a href="index.php">Webshop</a>
+            <a href="homepage.php">Webshop</a>
             <a href="signUp.html">Aanmelden</a>
             <a href="logIn.html">Inloggen</a>
         </div>
