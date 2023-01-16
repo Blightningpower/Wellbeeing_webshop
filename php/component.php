@@ -12,4 +12,3 @@ class=\"flexProductsText1\">$productname<br> &#8364 $productprice</span>
 echo $element;
 }
 
-?>
