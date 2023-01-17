@@ -8,7 +8,26 @@ require_once('../php/CreateDb.php');
 $database = new CreateDb(dbname: "Productdb", tablename: "Producttb");
 
 if(isset($_POST['add'])){
-    print_r($_POST['product_id']);
+    //print_r($_POST['product_id']);
+    if(isset($_SESSION['cart'])){
+        $item_array_id = array_column($_SESSION['cart'], "product_id");
+        if (in_array($_POST['product_id'], $item_array_id)){
+            echo "<script>alert('Product is already added')</script>";
+            echo "<script>window.location = 'homepage.php'</script>";
+        }else{
+            $count = count($_SESSION['cart']);
+            $item_array = array(
+                'product_id' => $_POST['product_id']
+            );
+            $_SESSION['cart'][$count] = $item_array;
+        }
+    }else{
+        $item_array = array(
+            'product_id' => $_POST['product_id']
+        );
+        $_SESSION['cart'][0] = $item_array;
+        print_r($_SESSION['cart']);
+    }
 }
 
 ?>
@@ -34,7 +53,7 @@ if(isset($_POST['add'])){
     <!--This code is for the header-->
 
     <header>
-        <img class="logo" src="/img/Logo%20wellbeeing%207.0%20-%20cut.png" alt="Wellbeeinglogo">
+        <img class="logo" src="https://blightningpower.github.io/Wellbeeing_webshop/img/Logo%20wellbeeing%207.0%20-%20cut.png" alt="Wellbeeinglogo">
         <h1 class="WellbeeingHeaderTitle"><span class="WellbeeingTitleWord">Wellbeeing</span>Webshop</h1>
         <!--Navigation searchbar-->
         <div class="searchbar">
@@ -48,12 +67,12 @@ if(isset($_POST['add'])){
 
         <div class="navbarButton">
             <a href="homepage.php">Webshop</a>
-            <a href="/html/signUp.html">Aanmelden</a>
-            <a href="/html/logIn.html">Inloggen</a>
+            <a href="signUp.html">Aanmelden</a>
+            <a href="logIn.html">Inloggen</a>
         </div>
 
         <!--Navigation shoppingcart-->
-        <a href="/html/shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
+        <a href="shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
                 src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
                 alt="ShoppingCart" /></a>
         <div class="navHeader">
@@ -80,7 +99,7 @@ if(isset($_POST['add'])){
                 <?php
                     $result = $database->getData();
                     while ($row = mysqli_fetch_assoc($result)){
-                        component($row['product_name'], $row['product_price'], $row['product_image'], $row['id'], $row['product_page']);
+                        component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
                     }
                 ?>
             </tr>
