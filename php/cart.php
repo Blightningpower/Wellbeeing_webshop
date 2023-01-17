@@ -12,8 +12,6 @@ if (isset($_POST['remove'])) {
         foreach ($_SESSION['cart'] as $key => $value) {
             if ($value["product_id"] == $_GET['id']) {
                 unset($_SESSION['cart'][$key]);
-                echo "<script>alert('Product has been Removed...!')</script>";
-                echo "<script>window.location = 'cart.php'</script>";
             }
         }
     }
@@ -29,7 +27,7 @@ if (isset($_POST['remove'])) {
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cart</title>
+    <title>Winkelmand</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
@@ -67,7 +65,7 @@ if (isset($_POST['remove'])) {
         <a href="cart.php" class="shoppingCartButton"><img class="shoppingCartImage"
                 src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png" alt="ShoppingCart" />
             <h5 class="px-5 cart">
-                <i class="fas fa-shopping-cart"></i> Cart
+                <i class="fas fa-shopping-cart"></i> Winkelmand
                 <?php
 
                 if (isset($_SESSION['cart'])) {
@@ -93,7 +91,7 @@ if (isset($_POST['remove'])) {
         <div class="row px-5">
             <div class="col-md-7">
                 <div class="shopping-cart">
-                    <h6>My Cart</h6>
+                    <h6>Winkelmand</h6>
                     <hr>
 
                     <?php
@@ -122,27 +120,27 @@ if (isset($_POST['remove'])) {
             <div class="col-md-4 offset-md-1 border rounded mt-5 bg-white h-25">
 
                 <div class="pt-4">
-                    <h6>PRICE DETAILS</h6>
+                    <h6>Bestellingdetails</h6>
                     <hr>
                     <div class="row price-details">
                         <div class="col-md-6">
                             <?php
                             if (isset($_SESSION['cart'])) {
                                 $count = count($_SESSION['cart']);
-                                echo "<h6>Price ($count items)</h6>";
+                                echo "<h6>Prijs ($count producten)</h6>";
                             } else {
-                                echo "<h6>Price (0 items)</h6>";
+                                echo "<h6>Prijs (0 producten)</h6>";
                             }
                             ?>
-                            <h6>Delivery Charges</h6>
+                            <h6>Verzendkosten</h6>
                             <hr>
-                            <h6>Amount Payable</h6>
+                            <h6>Totale kosten</h6>
                         </div>
                         <div class="col-md-6">
-                            <h6>$<?php echo $total; ?></h6>
-                            <h6 class="text-success">FREE</h6>
+                            <h6>€ <?php echo $total; ?></h6>
+                            <h6 class="text-success">GRATIS</h6>
                             <hr>
-                            <h6>$<?php
+                            <h6>€ <?php
                             echo $total;
                             ?></h6>
                         </div>

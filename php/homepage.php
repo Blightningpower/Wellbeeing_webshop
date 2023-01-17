@@ -8,11 +8,10 @@ require_once('../php/CreateDb.php');
 $database = new CreateDb(dbname: "Productdb", tablename: "Producttb");
 
 if (isset($_POST['add'])) {
-    //print_r($_POST['product_id']);
     if (isset($_SESSION['cart'])) {
         $item_array_id = array_column($_SESSION['cart'], "product_id");
         if (in_array($_POST['product_id'], $item_array_id)) {
-            echo "<script>alert('Product is already added')</script>";
+            echo "<script>alert('Product is al toegevoegd')</script>";
             echo "<script>window.location = 'homepage.php'</script>";
         } else {
             $count = count($_SESSION['cart']);
@@ -77,7 +76,7 @@ if (isset($_POST['add'])) {
         <a href="cart.php" class="shoppingCartButton"><img class="shoppingCartImage"
                 src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png" alt="ShoppingCart" />
             <h5 class="px-5 cart">
-                <i class="fas fa-shopping-cart"></i> Cart
+                <i class="fas fa-shopping-cart"></i> Winkelmand
                 <?php
 
                 if (isset($_SESSION['cart'])) {
@@ -93,8 +92,8 @@ if (isset($_POST['add'])) {
         <div class="navHeader">
             <a href="#">Alle producten</a>
             <a href="#">Smart Beehives</a>
-            <a href="#">Bloemenzaden</a>
-            <a href="#">Honing</a>
+            <a href="#">Beehives</a>
+            <a href="#">Losse producten</a>
         </div>
 
     </header>
@@ -102,12 +101,14 @@ if (isset($_POST['add'])) {
 
     <!--This code is for the products-->
     <section class="bodysection">
-        <details class="SortList">
-            <summary class="SortListHead">Sorteer</summary>
-            <button class="SortListItem1"><a href="#" class="SortListParagraph">Populairste</a></button>
-            <button class="SortListItem2"><a href="#" class="SortListParagraph">Prijs: Laag - Hoog</a></button>
-            <button class="SortListItem3"><a href="#" class="SortListParagraph">Prijs: Hoog - Laag</a></button>
-        </details>
+        <form action="register_script.php" name="frm" method="post">
+            <details class="SortList">
+                <summary class="SortListHead">Sorteer</summary>
+                <button class="SortListItem1"><a href="#" class="SortListParagraph">Populairste</a></button>
+                <button class="SortListItem2"><a href="#" class="SortListParagraph">Prijs: Laag - Hoog</a></button>
+                <button class="SortListItem3"><a href="#" class="SortListParagraph">Prijs: Hoog - Laag</a></button>
+            </details>
+        </form>
 
         <table>
             <tr>
