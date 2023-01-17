@@ -7,21 +7,21 @@ require_once('../php/CreateDb.php');
 
 $database = new CreateDb(dbname: "Productdb", tablename: "Producttb");
 
-if(isset($_POST['add'])){
+if (isset($_POST['add'])) {
     //print_r($_POST['product_id']);
-    if(isset($_SESSION['cart'])){
+    if (isset($_SESSION['cart'])) {
         $item_array_id = array_column($_SESSION['cart'], "product_id");
-        if (in_array($_POST['product_id'], $item_array_id)){
+        if (in_array($_POST['product_id'], $item_array_id)) {
             echo "<script>alert('Product is already added')</script>";
             echo "<script>window.location = 'homepage.php'</script>";
-        }else{
+        } else {
             $count = count($_SESSION['cart']);
             $item_array = array(
                 'product_id' => $_POST['product_id']
             );
             $_SESSION['cart'][$count] = $item_array;
         }
-    }else{
+    } else {
         $item_array = array(
             'product_id' => $_POST['product_id']
         );
@@ -53,7 +53,9 @@ if(isset($_POST['add'])){
     <!--This code is for the header-->
 
     <header>
-        <img class="logo" src="https://blightningpower.github.io/Wellbeeing_webshop/img/Logo%20wellbeeing%207.0%20-%20cut.png" alt="Wellbeeinglogo">
+        <img class="logo"
+            src="https://blightningpower.github.io/Wellbeeing_webshop/img/Logo%20wellbeeing%207.0%20-%20cut.png"
+            alt="Wellbeeinglogo">
         <h1 class="WellbeeingHeaderTitle"><span class="WellbeeingTitleWord">Wellbeeing</span>Webshop</h1>
         <!--Navigation searchbar-->
         <div class="searchbar">
@@ -72,9 +74,22 @@ if(isset($_POST['add'])){
         </div>
 
         <!--Navigation shoppingcart-->
-        <a href="shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
-                src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
-                alt="ShoppingCart" /></a>
+        <a href="cart.php" class="shoppingCartButton"><img class="shoppingCartImage"
+                src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png" alt="ShoppingCart" />
+            <h5 class="px-5 cart">
+                <i class="fas fa-shopping-cart"></i> Cart
+                <?php
+
+                if (isset($_SESSION['cart'])) {
+                    $count = count($_SESSION['cart']);
+                    echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+                } else {
+                    echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
+                }
+
+                ?>
+            </h5>
+        </a>
         <div class="navHeader">
             <a href="#">Alle producten</a>
             <a href="#">Smart Beehives</a>
@@ -97,15 +112,15 @@ if(isset($_POST['add'])){
         <table>
             <tr>
                 <?php
-                    $result = $database->getData();
-                    while ($row = mysqli_fetch_assoc($result)){
-                        component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
-                    }
+                $result = $database->getData();
+                while ($row = mysqli_fetch_assoc($result)) {
+                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
+                }
                 ?>
             </tr>
         </table>
     </section>
-<footer>Lorem Ipsum dolor</footer>
+    <footer>Lorem Ipsum dolor</footer>
 
 </body>
 
