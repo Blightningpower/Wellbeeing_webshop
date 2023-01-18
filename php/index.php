@@ -40,7 +40,7 @@ if (isset($_POST['add'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Webshop stylesheet-->
-    <link rel="stylesheet" href="https://blightningpower.github.io/Wellbeeing_webshop/css/homepage.css">
+    <link rel="stylesheet" href="https://blightningpower.github.io/Wellbeeing_webshop/css/index.css">
 
     <title>OPP Webshop</title>
 
@@ -62,7 +62,7 @@ if (isset($_POST['add'])) {
 
 
     <div class="navbarButton">
-        <a href="homepage.html">Webshop</a>
+        <a href="index.html">Webshop</a>
         <a href="signUp.html">Aanmelden</a>
         <a href="logIn.html">Inloggen</a>
     </div>
