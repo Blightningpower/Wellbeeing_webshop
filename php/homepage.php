@@ -2,10 +2,10 @@
 
 session_start();
 
-require_once('../php/component.php');
-require_once('../php/CreateDb.php');
+require_once('../php/products.php');
+require_once('../php/createDb.php');
 
-$database = new CreateDb(dbname: "Productdb", tablename: "Producttb");
+$database = new createDb(dbname: "Productdb", tablename: "Producttb");
 
 if (isset($_POST['add'])) {
     if (isset($_SESSION['cart'])) {
@@ -115,7 +115,7 @@ if (isset($_POST['add'])) {
                 <?php
                 $result = $database->getData();
                 while ($row = mysqli_fetch_assoc($result)) {
-                    component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
+                    products($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
                 }
                 ?>
             </tr>

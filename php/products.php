@@ -2,7 +2,7 @@
 
 /* Functie met de parameters naam, prijs, afbeelding en id. Wordt gebruikt om de producten met de juiste gegevens op de webshop
 weer te geven. Deze gegevens worden uit de database gehaald. */
-function component($productname, $productprice, $productimage, $productid)
+function products($productname, $productprice, $productimage, $productid)
 {
     $element =
         "<form action=\"homepage.php\" method=\"post\">
@@ -19,7 +19,7 @@ class=\"flexProductsText1\">$productname<br> &#8364 $productprice</span>
 
 /* Functie met de parameters naam, prijs, afbeelding en id. Wordt gebruikt om de producten met de juiste gegevens in de winkelmand
 weer te geven. */
-function cartElement($productimg, $productname, $productprice, $productid)
+function cartProducts($productimg, $productname, $productprice, $productid)
 {
     $element = "
     
