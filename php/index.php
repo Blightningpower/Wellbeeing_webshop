@@ -12,7 +12,7 @@ if (isset($_POST['add'])) {
         $item_array_id = array_column($_SESSION['cart'], "product_id");
         if (in_array($_POST['product_id'], $item_array_id)) {
             echo "<script>alert('Product is al toegevoegd')</script>";
-            echo "<script>window.location = 'homepage.php'</script>";
+            echo "<script>window.location = 'index.php'</script>";
         } else {
             $count = count($_SESSION['cart']);
             $item_array = array(
@@ -40,7 +40,7 @@ if (isset($_POST['add'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Webshop stylesheet-->
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
 
     <title>Wellbeeing Webshop</title>
 
@@ -128,7 +128,7 @@ if (isset($_POST['add'])) {
             </tr>
         </table>
     </section>
-    <footer>Lorem Ipsum dolor</footer>
+    <footer>Lorem Ipsum dolor!</footer>
 
 </body>
 
