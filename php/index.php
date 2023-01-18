@@ -62,13 +62,13 @@ if (isset($_POST['add'])) {
 
 
     <div class="navbarButton">
-        <a href="index.html">Webshop</a>
-        <a href="signUp.html">Aanmelden</a>
-        <a href="logIn.html">Inloggen</a>
+        <a href="/html/index.html">Webshop</a>
+        <a href="/html/signUp.html">Aanmelden</a>
+        <a href="/html/logIn.html">Inloggen</a>
     </div>
 
     <!--Navigation shoppingcart-->
-    <a href="shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
+    <a href="/html/shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
                                                                 src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
                                                                 alt="ShoppingCart"/></a>
 
@@ -99,6 +99,7 @@ if (isset($_POST['add'])) {
                 ?>
             </h5>
         </a>
+
         <div class="navHeader">
             <a href="#">Alle producten</a>
             <a href="#">Smart Beehives</a>
@@ -106,12 +107,8 @@ if (isset($_POST['add'])) {
             <a href="#">Losse producten</a>
         </div>
 
-    </header>
-
-
-    <!--This code is for the products-->
-    <section class="bodysection">
-        <form action="register_script.php" name="frm" method="post">
+<section class="bodysection">
+        <form action="/php/register_script.php" name="frm" method="post">
             <details class="SortList">
                 <summary class="SortListHead">Sorteer</summary>
                 <button class="SortListItem1"><a href="#" class="SortListParagraph">Populairste</a></button>
