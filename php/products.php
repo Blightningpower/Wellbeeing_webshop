@@ -1,5 +1,5 @@
 <?php
-
+include "/css/homepage.css";
 /* Functie met de parameters naam, prijs, afbeelding en id. Wordt gebruikt om de producten met de juiste gegevens op de webshop
 weer te geven. Deze gegevens worden uit de database gehaald. */
 function products($productname, $productprice, $productimage, $productid)
