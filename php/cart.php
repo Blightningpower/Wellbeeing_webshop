@@ -2,10 +2,10 @@
 
 session_start();
 
-require_once("../php/CreateDb.php");
-require_once("../php/component.php");
+require_once("../php/createDb.php");
+require_once("../php/products.php");
 
-$db = new CreateDb("Productdb", "Producttb");
+$db = new createDb("Productdb", "Producttb");
 
 if (isset($_POST['remove'])) {
     if ($_GET['action'] == 'remove') {
@@ -104,7 +104,7 @@ if (isset($_POST['remove'])) {
                         while ($row = mysqli_fetch_assoc($result)) {
                             foreach ($product_id as $id) {
                                 if ($row['id'] == $id) {
-                                    cartElement($row['product_image'], $row['product_name'], $row['product_price'], $row['id']);
+                                    cartProducts($row['product_image'], $row['product_name'], $row['product_price'], $row['id']);
                                     $total = $total + (int) $row['product_price'];
                                 }
                             }

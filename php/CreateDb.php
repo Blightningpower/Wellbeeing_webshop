@@ -1,6 +1,6 @@
 <?php
 
-class CreateDb
+class createDb
 {
     public mixed $servername;
     public mixed $username;
