@@ -10,18 +10,24 @@ body {
 }
 
 /*This code is for the navigation bar*/
-
 header {
     border: 2px solid black;
     width: 100%;
+    float: left;
     position: fixed;
+    max-height: 9vw;
     background-color: #182024;
     top: 0;
     z-index: 1;
+    margin-top: -9px;
+    line-height: 300%;
+    list-style-type: none;
+    overflow: hidden;
 }
 
 .navbarButton {
     position: relative;
+    top: -4vw;
     right: -50vw;
     float: unset;
 }
@@ -43,34 +49,41 @@ header {
 }
 
 img.logo {
-    max-width: 16vh;
-    padding: 1vh 1vh 1vh 1vh;
+    max-width: 17vh;
+    position: fixed;
+    padding: 2vh 0 0 0;
 }
 
 .WellbeeingHeaderTitle {
+    font-size: 25px;
+    width: min-content;
+    position: absolute;
+    right: 81%;
+    top: 49%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     color: #FFC640;
 }
 
 .WellbeeingTitleWord {
-    margin: 0 0 0 -3vh;
+    position: relative;
+    left: 12vw;
+    top: -2vw;
 }
 
 .shoppingCartImage {
     width: 45px;
     height: 40px;
-    margin-top: 3%;
+    margin-top: 24%;
 }
 
 a.shoppingCartButton {
-    top: -1vw;
+    top: -10vw;
     left: -4vw;
     float: right;
     position: relative;
     width: 4%;
-    padding: 0 1px;
+    padding: 0 1px 0 1px;
     border: 2px solid black;
-    max-height: 9vh;
 }
 
 .shoppingCartButton:hover {
@@ -79,34 +92,43 @@ a.shoppingCartButton {
     height: 100%;
 }
 
+
 .searchbar {
-    padding: 6vh 0 0 23vh;
+    position: relative;
+    left: 27vw;
+    top: -3vw;
+    height: 0;
 }
 
 input.searchBarfield {
     font-size: inherit;
     border: 2px solid black;
+    max-height: fit-content;
 }
 
 .searchBarIcon {
-    max-height: 21px;
+    position: relative;
+    bottom: -7px;
+    left: -30px;
+    height: 21px;
     border: 2px solid black;
 }
 
 .navHeader {
     border-bottom: 2px solid black;
-    height: 2vw;
+    min-height: 4%;
     background-color: #FFC72C;
+    top: 20%;
+    line-height: normal;
     width: 100%;
     position: fixed;
-    max-height: 4%;
-    top: 24%;
-    line-height: normal;
+    z-index: 1;
+    margin-top: -9px;
 }
 
 .navHeader a {
     text-decoration: none;
-    padding: 0 1vw 7px;
+    padding: 0 1vh 6px 8px;
     color: black;
     font-weight: bold;
 }
@@ -255,21 +277,8 @@ details[open] summary:after {
     content: '';
 }
 
+
 /*Footer*/
-
-.footer h4 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-
-.icons .fa {
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-
 footer {
     padding: 50px 0;
     color: #f0f9ff;
@@ -316,7 +325,7 @@ footer {
     text-align: center;
 }
 
-.footer-dark .item.social > a {
+.footer-dark .item.social>a {
     font-size: 20px;
     width: 36px;
     height: 36px;
