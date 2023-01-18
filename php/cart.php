@@ -36,7 +36,7 @@ if (isset($_POST['remove'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/homepage.css">
 </head>
 
 <body class="bg-light">
@@ -57,8 +57,8 @@ if (isset($_POST['remove'])) {
 
         <div class="navbarButton">
             <a href="homepage.php">Webshop</a>
-            <a href="signUp.html">Aanmelden</a>
-            <a href="logIn.html">Inloggen</a>
+            <a href="signUp.php">Aanmelden</a>
+            <a href="logIn.php">Inloggen</a>
         </div>
 
         <!--Navigation shoppingcart-->
@@ -110,7 +110,7 @@ if (isset($_POST['remove'])) {
                             }
                         }
                     } else {
-                        echo "<h5>Cart is Empty</h5>";
+                        echo "<h5>Winkelmand is leeg</h5>";
                     }
 
                     ?>
@@ -127,7 +127,12 @@ if (isset($_POST['remove'])) {
                             <?php
                             if (isset($_SESSION['cart'])) {
                                 $count = count($_SESSION['cart']);
-                                echo "<h6>Prijs ($count producten)</h6>";
+                                if ($count == 1) {
+                                    echo "<h6>Prijs ($count product)</h6>";
+                                }
+                                if ($count > 1) {
+                                    echo "<h6>Prijs ($count producten)</h6>";
+                                }
                             } else {
                                 echo "<h6>Prijs (0 producten)</h6>";
                             }
@@ -143,6 +148,10 @@ if (isset($_POST['remove'])) {
                             <h6>€ <?php
                             echo $total;
                             ?></h6>
+                            <br>
+                            <a href="thankyou.php" button type="submit" class="btn btn-success mx-2" name="bestellen">Bestellen</button></a>
+                            <br>
+                            <br>
                         </div>
                     </div>
                 </div>
