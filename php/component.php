@@ -34,7 +34,7 @@ function cartElement($productimg, $productname, $productprice, $productid)
                                 <br>
                                 <h5 class=\"pt-2\">€ $productprice</h5>
                                 <br>
-                                <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Remove</button>
+                                <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Verwijder</button>
                             </div>
                             <div class=\"col-md-3 py-5\">
                                 <div>

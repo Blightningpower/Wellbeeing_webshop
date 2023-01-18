@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--Webshop stylesheet-->
-  <link rel="stylesheet" href="../css/productPage4.css">
+  <link rel="stylesheet" href="../css/login.css">
 
-  <title>OPP Webshop Standaard Verzenddoos</title>
+  <title>OPP Webshop Log-In</title>
 
 </head>
 <body>
@@ -20,6 +20,7 @@
 <header>
   <img class="logo" src="../img/Logo%20wellbeeing%207.0%20-%20cut.png" alt="Wellbeeinglogo">
   <h1 class="WellbeeingHeaderTitle"><span class="WellbeeingTitleWord">Wellbeeing</span>Webshop</h1>
+
   <!--Navigation searchbar-->
   <div class="searchbar">
     <label>
@@ -31,48 +32,29 @@
 
 
   <div class="navbarButton">
-    <a href="/html/homepage.html">Webshop</a>
-    <a href="/html/signUp.html">Aanmelden</a>
-    <a href="/html/logIn.html">Inloggen</a>
+    <a href="homepage.php">Webshop</a>
+    <a href="signUp.php">Aanmelden</a>
+    <a href="logIn.php">Inloggen</a>
   </div>
 
   <!--Navigation shoppingcart-->
-  <a href="/html/shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
+  <a href="cart.php" class="shoppingCartButton"><img class="shoppingCartImage"
                                                               src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
                                                               alt="ShoppingCart"/></a>
 </header>
+
 <div class="bodysection">
-<br><br>
-
-<div class="Cart-Container">
-  <div class="Header">
-    <img src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/Verzenddoos%20-%20Postdoos.png" class="productImage" alt="">
-  </div>
-
-  <div class="numberInput"><label for="myNumber"></label><input type="number" id="myNumber" value="1" style="
-    width: 30%;"></div>
-
-  <script>
-    {
-      document.getElementById("").innerHTML = document.getElementById("myNumber").value;
-    }
-  </script>
-
-  <ol class="productName">
-    <p class="productName1">Verzenddoos - Postdoos</p>
-    <p class="productPrice">Prijs: €0,50</p>
-  </ol>
-
-  <form action="/html/shoppingCart.html">
-    <button class="sButton" type="submit">Plaats in Winkelmand</button>
-  </form>
-
-  <ol class="productDescription">
-    <p class="productText">Productbeschrijving:</p>
-    <p class="productText1">Deze doos heeft een afmeting van 55mm x 55mm x 15mm en is momenteel alleen verkrijgbaar in
-      het grijs.</p>
-  </ol>
-
+<img src="../img/Logo%20wellbeeing%207.0%20-%20cut.png" id="logo" alt="">
+<br>
+<div class="centerItems">
+  <label class="uNameText" for="eMail">Gebruikersnaam:</label><br>
+  <input type="text" id="eMail" name="eMail">
+  <br><br>
+  <label class="pWordText" for="pWord">Wachtwoord:</label><br>
+  <input type="password" id="pWord" name="pWord">
+  <br>
+  <br>
+  <button class="sButton"><a href="homepage.php" alt="noStyle1">Inloggen</a></button>
 </div>
 </div>
 <!-------Footer------>
@@ -103,8 +85,8 @@
         <div class="col-md-6 item text">
           <h3>Well<span>bee</span>ing.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat</p>
+            labore et dolore magna aliqua. Ut enim ad minim venial, quits nostrum excitation ultimo
+            labors nisei ut aliquot ex ea common consequent</p>
         </div>
         <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
                 class="icon ion-social-twitter"></i></a><a href="#"><i
@@ -119,4 +101,3 @@
 
 </body>
 </html>
-

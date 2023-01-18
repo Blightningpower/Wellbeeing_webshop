@@ -68,8 +68,8 @@ if (isset($_POST['add'])) {
 
         <div class="navbarButton">
             <a href="homepage.php">Webshop</a>
-            <a href="signUp.html">Aanmelden</a>
-            <a href="logIn.html">Inloggen</a>
+            <a href="signUp.php">Aanmelden</a>
+            <a href="logIn.php">Inloggen</a>
         </div>
 
         <!--Navigation shoppingcart-->

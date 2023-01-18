@@ -8,14 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--Webshop stylesheet-->
-  <link rel="stylesheet" href="../css/productPage5.css">
+  <link rel="stylesheet" href="../css/signUp.css">
 
-  <title>OPP Webshop Standaard Verzenddoos</title>
+  <title>OPP Webshop Aanmelden</title>
 
 </head>
 <body>
 
-<!--This code is for the header-->
+<!--This code is for the navigation bar-->
+
+<<!--This code is for the header-->
 
 <header>
   <img class="logo" src="../img/Logo%20wellbeeing%207.0%20-%20cut.png" alt="Wellbeeinglogo">
@@ -31,49 +33,86 @@
 
 
   <div class="navbarButton">
-    <a href="homepage.html">Webshop</a>
-    <a href="signUp.html">Aanmelden</a>
-    <a href="logIn.html">Inloggen</a>
+    <a href="homepage.php">Webshop</a>
+    <a href="signUp.php">Aanmelden</a>
+    <a href="logIn.php">Inloggen</a>
   </div>
 
   <!--Navigation shoppingcart-->
-  <a href="shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
+  <a href="cart.php" class="shoppingCartButton"><img class="shoppingCartImage"
                                                               src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
                                                               alt="ShoppingCart"/></a>
 </header>
 <div class="bodysection">
-<br><br>
+<h2>Vul je gegevens in</h2>
 
-<div class="Cart-Container">
-  <div class="Header">
-    <img src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/Verzenddoos%20-%20Wikkeldoos.png" class="productImage" alt="">
-  </div>
+<table>
 
-  <div class="numberInput"><label for="myNumber"></label><input type="number" id="myNumber" value="1" style="
-    width: 30%;"></div>
+  <thead>
 
-  <script>
-    {
-      document.getElementById("").innerHTML = document.getElementById("myNumber").value;
-    }
-  </script>
+  <tr>
+    <td><label for="fName">Voornaam:</label><br>
+      <input type="text" id="fName" name="fName">
+    </td>
+    <td><label for="insertion">Tussenvoegsel:</label><br>
+      <input type="text" id="insertion" name="insertion">
+    </td>
+    <td><label for="lName">Achternaam:</label><br>
+      <input type="text" id="lName" name="lName">
+    </td>
+  </tr>
 
-  <ol class="productName">
-    <p class="productName1">Verzenddoos - Wikkeldoos</p>
-    <p class="productPrice">Prijs: €0,70</p>
-  </ol>
+  <tr>
+    <td><label for="eMail">E-mailadres:</label><br>
+      <input type="text" id="eMail" name="eMail">
+    </td>
+    <td><label for="pNumber">Telefoonnummer:</label><br>
+      <input type="number" id="pNumber" name="pNumber">
+    </td>
+  </tr>
 
-  <form action="shoppingCart.html">
-    <button class="sButton" type="submit">Plaats in Winkelmand</button>
-  </form>
+  </thead>
+  <tbody>
 
-  <ol class="productDescription">
-    <p class="productText">Productbeschrijving:</p>
-    <p class="productText1">Deze doos heeft een afmeting van 100mm x 100mm x 40mm en is momenteel alleen verkrijgbaar in
-      het grijs.</p>
-  </ol>
+  <tr>
+    <td><label for="country">Land:</label><br>
+      <input type="text" id="country" name="country">
+    </td>
+    <td><label for="province">Provincie:</label><br>
+      <input type="text" id="province" name="province">
+    </td>
+  </tr>
+  <tr>
+    <td><label for="city">Stad:</label><br>
+      <input type="text" id="city" name="city">
+    </td>
+    <td><label for="street">Straat:</label><br>
+      <input type="text" id="street" name="street">
+    </td>
+    <td><label for="hNumber">Huisnummer:</label><br>
+      <input type="number" id="hNumber" name="hNumber">
+    </td>
+    <td><label for="pCode">Postcode:</label><br>
+      <input type="text" id="pCode" name="pCode">
+    </td>
+  </tr>
 
-</div>
+  </tbody>
+  <tfoot>
+
+  <tr>
+    <td><label for="pWord">Nieuw wachtwoord:</label><br>
+      <input type="password" id="pWord" name="pWord">
+    </td>
+    <td><label for="ConfirmpWord">Bevestig wachtwoord:</label><br>
+      <input type="password" id="ConfirmpWord" name="ConfirmpWord">
+    </td>
+
+  </tfoot>
+
+</table>
+
+<input type="submit" class="sButton" value="Aanmelden">
 </div>
 <!-------Footer------>
 <div class="footer-dark">
@@ -119,4 +158,3 @@
 
 </body>
 </html>
-
