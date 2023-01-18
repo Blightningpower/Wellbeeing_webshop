@@ -42,7 +42,7 @@ if (isset($_POST['add'])) {
     <!--Webshop stylesheet-->
     <link rel="stylesheet" href="/css/index.css">
 
-    <title>OPP Webshop</title>
+    <title>Wellbeeing Webshop</title>
 
 </head>
 <body>
