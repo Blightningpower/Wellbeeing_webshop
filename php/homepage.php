@@ -33,44 +33,54 @@ if (isset($_POST['add'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Webshop stylesheet-->
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="https://blightningpower.github.io/Wellbeeing_webshop/css/homepage.css">
 
     <title>OPP Webshop</title>
 
 </head>
-
 <body>
 
-    <!--This code is for the header-->
-
-    <header>
-        <img class="logo"
-            src="https://blightningpower.github.io/Wellbeeing_webshop/img/Logo%20wellbeeing%207.0%20-%20cut.png"
-            alt="Wellbeeinglogo">
-        <h1 class="WellbeeingHeaderTitle"><span class="WellbeeingTitleWord">Wellbeeing</span>Webshop</h1>
-        <!--Navigation searchbar-->
-        <div class="searchbar">
-            <label>
-                <input class="searchBarfield" type="text" placeholder="Zoeken..">
-                <img class="searchBarIcon" src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/searchbarIcon.png"
-                    alt="searchBarIcon">
-            </label>
-        </div>
+<!--This code is for the header-->
+<header>
+    <img class="logo" src="../img/Logo%20wellbeeing%207.0%20-%20cut.png" alt="Wellbeeinglogo">
+    <h1 class="WellbeeingHeaderTitle"><span class="WellbeeingTitleWord">Wellbeeing</span>Webshop</h1>
+    <!--Navigation searchbar-->
+    <div class="searchbar">
+        <label>
+            <input class="searchBarfield" type="text" placeholder="Zoeken..">
+            <img class="searchBarIcon" src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/searchbarIcon.png"
+                 alt="searchBarIcon">
+        </label>
+    </div>
 
 
-        <div class="navbarButton">
-            <a href="homepage.php">Webshop</a>
-            <a href="signUp.php">Aanmelden</a>
-            <a href="logIn.php">Inloggen</a>
-        </div>
+    <div class="navbarButton">
+        <a href="homepage.html">Webshop</a>
+        <a href="signUp.html">Aanmelden</a>
+        <a href="logIn.html">Inloggen</a>
+    </div>
+
+    <!--Navigation shoppingcart-->
+    <a href="shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
+                                                                src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
+                                                                alt="ShoppingCart"/></a>
+
+
+</header>
+
+<div class="navHeader">
+    <a href="#">Alle producten</a>
+    <a href="#">Smart Beehives</a>
+    <a href="#">Bloemenzaden</a>
+    <a href="#">Honing</a>
+</div>
 
         <!--Navigation shoppingcart-->
         <a href="cart.php" class="shoppingCartButton"><img class="shoppingCartImage"
