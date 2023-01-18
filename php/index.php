@@ -40,7 +40,7 @@ if (isset($_POST['add'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Webshop stylesheet-->
-    <link rel="stylesheet" href="https://blightningpower.github.io/Wellbeeing_webshop/css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
 
     <title>OPP Webshop</title>
 
