@@ -1,6 +1,6 @@
 /*This code is applied on the whole page*/
 * {
-  font-family: 'proxima_novabold', sans-serif;
+    font-family: 'proxima_novabold', sans-serif;
     padding: 0;
     box-sizing: border-box;
     outline: none;
@@ -605,3 +605,4 @@ details[open] summary:after {
     width: 100%;
   }
 }
+
