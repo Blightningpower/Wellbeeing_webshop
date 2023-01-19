@@ -34,16 +34,16 @@ if (isset($_POST['add'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <script src="https://kit.fontawesome.com/4b14647f69.js" crossorigin="anonymous"></script>
 
-    <!--Webshop stylesheet-->
+    <!-- Webshop stylesheet -->
     <link rel="stylesheet" href="../css/index.css">
 
     <title>Wellbeeing Webshop</title>
@@ -64,6 +64,15 @@ if (isset($_POST['add'])) {
 <div class="overNavHeader">
     <img class="headerimage" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Logo wellbeeing 7.0 - cut.png">
     <a href="#" class="logo"> Well<span>bee</span>ing</a>
+
+    <!--Navigation searchbar-->
+    <div class="searchbar">
+        <label>
+            <input class="searchBarfield" type="text" placeholder="Zoeken..">
+            <img class="searchBarIcon" src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/searchbarIcon.png"
+                 alt="searchBarIcon">
+        </label>
+    </div>
 
     <nav class="navbar">
       <div id="close-navbar" class="fas fa-times"></div>
