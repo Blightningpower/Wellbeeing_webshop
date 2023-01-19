@@ -34,6 +34,7 @@ if (isset($_POST['add'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <link rel="apple-touch-icon" sizes="180x180" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/favicon-16x16.png">
@@ -44,6 +45,14 @@ if (isset($_POST['add'])) {
     <script src="https://kit.fontawesome.com/4b14647f69.js" crossorigin="anonymous"></script>
 
     <!-- Webshop stylesheet -->
+=======
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Webshop stylesheet-->
+>>>>>>> babeb2b0b2cbcb86f1e794769346e36c4bb0b037
     <link rel="stylesheet" href="../css/index.css">
 
     <title>Wellbeeing Webshop</title>
@@ -52,6 +61,7 @@ if (isset($_POST['add'])) {
 <body>
 
 <!--This code is for the header-->
+<<<<<<< HEAD
 <header class="header">
 
 <div class="navHeader">
@@ -65,6 +75,11 @@ if (isset($_POST['add'])) {
     <img class="headerimage" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Logo wellbeeing 7.0 - cut.png">
     <a href="#" class="logo"> Well<span>bee</span>ing</a>
 
+=======
+<header>
+    <img class="logo" src="../img/Logo%20wellbeeing%207.0%20-%20cut.png" alt="Wellbeeinglogo">
+    <h1 class="WellbeeingHeaderTitle"><span class="WellbeeingTitleWord">Wellbeeing</span>Webshop</h1>
+>>>>>>> babeb2b0b2cbcb86f1e794769346e36c4bb0b037
     <!--Navigation searchbar-->
     <div class="searchbar">
         <label>
@@ -74,6 +89,7 @@ if (isset($_POST['add'])) {
         </label>
     </div>
 
+<<<<<<< HEAD
     <nav class="navbar">
       <div id="close-navbar" class="fas fa-times"></div>
       <a href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/html/index.html" target="_blank">HOMEPAGINA</a>
@@ -103,6 +119,66 @@ if (isset($_POST['add'])) {
     </details>
 
     <table>
+=======
+
+    <div class="navbarButton">
+        <a href="/html/index.html">Webshop</a>
+        <a href="/html/signUp.html">Aanmelden</a>
+        <a href="/html/logIn.html">Inloggen</a>
+    </div>
+
+    <!--Navigation shoppingcart-->
+    <a href="/html/shoppingCart.html" class="shoppingCartButton"><img class="shoppingCartImage"
+                                                                src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png"
+                                                                alt="ShoppingCart"/></a>
+
+
+</header>
+
+<div class="navHeader">
+    <a href="#">Alle producten</a>
+    <a href="#">Smart Beehives</a>
+    <a href="#">Bloemenzaden</a>
+    <a href="#">Honing</a>
+</div>
+
+        <!--Navigation shoppingcart-->
+        <a href="cart.php" class="shoppingCartButton"><img class="shoppingCartImage"
+                src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png" alt="ShoppingCart" />
+            <h5 class="px-5 cart">
+                <i class="fas fa-shopping-cart"></i> Winkelmand
+                <?php
+
+                if (isset($_SESSION['cart'])) {
+                    $count = count($_SESSION['cart']);
+                    echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+                } else {
+                    echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
+                }
+
+                ?>
+            </h5>
+        </a>
+
+        <div class="navHeader">
+            <a href="#">Alle producten</a>
+            <a href="#">Smart Beehives</a>
+            <a href="#">Beehives</a>
+            <a href="#">Losse producten</a>
+        </div>
+
+<section class="bodysection">
+        <form action="/php/register_script.php" name="frm" method="post">
+            <details class="SortList">
+                <summary class="SortListHead">Sorteer</summary>
+                <button class="SortListItem1"><a href="#" class="SortListParagraph">Populairste</a></button>
+                <button class="SortListItem2"><a href="#" class="SortListParagraph">Prijs: Laag - Hoog</a></button>
+                <button class="SortListItem3"><a href="#" class="SortListParagraph">Prijs: Hoog - Laag</a></button>
+            </details>
+        </form>
+
+        <table>
+>>>>>>> babeb2b0b2cbcb86f1e794769346e36c4bb0b037
             <tr>
                 <?php
                 $result = $database->getData();
@@ -112,6 +188,7 @@ if (isset($_POST['add'])) {
                 ?>
             </tr>
         </table>
+<<<<<<< HEAD
 </section>
 
 <!-- footer -->
@@ -168,3 +245,11 @@ if (isset($_POST['add'])) {
 </body>
 
 </html>
+=======
+    </section>
+    <footer>Lorem Ipsum dolor!</footer>
+
+</body>
+
+</html>
+>>>>>>> babeb2b0b2cbcb86f1e794769346e36c4bb0b037

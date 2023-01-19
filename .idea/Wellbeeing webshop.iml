@@ -4,5 +4,10 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
+=======
+    <orderEntry type="library" name="index" level="application" />
+    <orderEntry type="library" name="4b14647f69" level="application" />
+>>>>>>> babeb2b0b2cbcb86f1e794769346e36c4bb0b037
   </component>
 </module>
