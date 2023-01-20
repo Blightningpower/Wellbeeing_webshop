@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Wellbeeing Webshop Log-In</title>
+
+    <style>
+        /*This code is applied on the whole page*/
+        
+        * {
+            font-family: 'proxima_novabold', sans-serif;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            transition: all .2s linear;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #242F35;
+            margin-bottom: 60px;
+            color: white;
+        }
+        /*This code is for the navigation bar*/
+        
+        ol.navBorder {
+            background-color: #171E22;
+            border: 2px solid black;
+            margin-top: -9px;
+            margin-left: -8px;
+            width: 100%;
+            float: left;
+            position: absolute;
+            white-space: nowrap;
+            line-height: 300%;
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        li {
+            margin: 5px;
+            display: inline;
+        }
+        
+        li a {
+            background-color: black;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 6px;
+            color: white !important;
+            font-family: bold, Impact, sans-serif;
+            font-size: 15px !important;
+            position: relative;
+            top: -25px;
+        }
+        
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+        
+        img.logo {
+            width: 99px;
+            height: 90px;
+            margin-top: 5px;
+        }
+        
+        .shoppingCart {
+            width: 45px;
+            height: 40px;
+            margin-left: 0;
+        }
+        
+        a.shoppingCartButton {
+            border: none;
+            background-color: #242F35;
+            padding-top: 28px;
+            padding-right: 6px;
+            padding-left: 1px;
+            margin-left: 7em;
+            border-radius: 19%;
+        }
+        
+        .shoppingCartButton:hover {
+            background-color: #FFC72C;
+        }
+        
+        input.searchBar {
+            margin-left: 380px;
+            border: 2px solid black;
+            padding: 3px;
+            position: relative;
+            top: -10px;
+        }
+        
+        .searchBarIcon {
+            position: relative;
+            width: 26px;
+            height: 25px;
+            border: 2px solid black;
+            margin-left: -31px;
+            margin-bottom: 2px;
+        }
+        /*This code is for the login form*/
+        
+        .bodysection {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        #logo {
+            width: 15%;
+            display: table-column;
+            margin: 10% 0 0 40%;
+            position: absolute;
+        }
+        
+        #eMail,
+        #pWord {
+            margin: 3px;
+            width: 93%;
+            border-radius: 25px;
+            position: relative;
+            right: 0em;
+        }
+        
+        .uNameText {
+            position: relative;
+            right: -1em;
+        }
+        
+        .pWordText {
+            position: relative;
+            right: -1em;
+        }
+        
+        .sButton {
+            background-color: white;
+            color: #033483;
+            border: 3px solid #033483;
+            font-weight: bold;
+            font-size: 12px;
+            overflow: hidden;
+            /* margin-top: 32px; */
+            margin-left: 44px;
+        }
+        
+        .sButton:hover {
+            background-color: #033483;
+            color: white;
+        }
+        
+        .centerItems {
+            max-width: 30%;
+            height: 30%;
+            position: absolute;
+            left: 42%;
+            top: 55%;
+        }
+        /*This code is for the footer*/
+        
+        .navBorderFoot {
+            background-color: #171E22;
+            border: 2px solid black;
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+            height: 21px;
+            margin-top: 89px;
+            margin-left: -8px;
+            float: left;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            white-space: nowrap;
+            line-height: 300%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--This code is for the navigation bar-->
+
+    <ol class="navBorder">
+
+        <li><img class="logo" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Logo wellbeeing 7.0 - cut.png" alt="Wellbeeing Logo"></li>
+        <li><a href="index.html" alt="noStyle1">Webshop</a></li>
+        <li><a href="signUp.html" alt="noStyle1">Aanmelden</a></li>
+        <li><a href="logIn.html" alt="noStyle1">Inloggen</a></li>
+
+        <label>
+  <input class="searchBar" type="text" placeholder="Zoeken..">
+</label>
+        <img class="searchBarIcon" src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/searchbarIcon.png" alt="Zoekbalk-icoon">
+
+        <a href="shoppingCart.html" class="shoppingCartButton"><img class="shoppingCart" src="https://i484476.hera.fhict.nl/OPP_Webshop/Public/img/shoppingCartIcon.png" alt="" /></a>
+    </ol>
+
+
+    <section class="bodysection">
+        <img src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Logo wellbeeing 7.0 - cut.png" id="logo" alt="Wellbeeing Logo">
+        <br>
+        <div class="centerItems">
+            <label class="uNameText" for="eMail">Gebruikersnaam:</label><br>
+            <input type="text" id="eMail" name="eMail">
+            <br><br>
+            <label class="pWordText" for="pWord">Wachtwoord:</label><br>
+            <input type="password" id="pWord" name="pWord">
+            <br>
+            <br>
+            <button class="sButton"><a href="index.html" alt="noStyle1">Inloggen</a></button>
+        </div>
+    </section>
+
+    <footer class="navBorderFoot"></footer>
+
+</body>
+
+</html>
