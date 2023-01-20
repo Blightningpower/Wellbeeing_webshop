@@ -12,9 +12,9 @@ class createDb
     public function __construct(
         $dbname = "Newdb",
         $tablename = "Productdb",
-        $servername = "localhost",
-        $username = "root",
-        $password = ""
+        $servername = "10.18.1.4",
+        $username = "webshop",
+        $password = "ChEHiYO@ti0ymBej"
     )
     {
         $this->dbname = $dbname;
