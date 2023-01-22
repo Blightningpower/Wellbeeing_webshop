@@ -18,8 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
 
-    <title>Wellbeeing Webshop</title>
-
+    <title>Wellbeeing Webshop Winkelmand</title>
     <style>
         /*This code is applied to the whole page*/
         
@@ -166,121 +165,201 @@
             height: 40px;
             margin-left: 0;
         }
-        /*This code is applied to all the tags at the middle part of the page*/
         
-        #bodysection {
-            /*code applied to the whole middle part of the page*/
+        .bodysection {
             margin: 0 auto;
-            padding: 0;
+            padding: 8%;
         }
         
-        .sortList {
-            /*code applied to the whole sortlist aside from the page*/
-            background-color: #FFC640;
-            font-size: 15px;
-            border: 1px solid black;
-            bottom: 21vw;
-            left: 65rem;
-            float: left;
-            overflow: hidden;
-            width: 15%;
-            padding: 1vw;
-            color: black;
-        }
-        
-        .sortListHead {
-            /*code applied to the summary of the sortlist*/
-            font-weight: 600;
-        }
-        
-        .sortListItemButton {
-            /*code applied to the every button within the sortlist*/
-            background-color: #FFC640;
-            border: none;
-        }
-        
-        .sortListItemButton:hover {
-            /*code applied for the hovering effect of every button within the sortlist*/
-            background-color: #262626;
-            color: white !important;
-        }
-        
-        .sortListLink {
-            /*code applied to the every link within the sortlist*/
-            text-decoration: none;
-            color: black;
-        }
-        
-        #productsDiv {
-            /*code applied to the container which contains all the products*/
+        .Header {
             margin: auto;
-            padding: 10% 17% 10% 17%;
+            width: 90%;
+            height: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
-        .product {
-            /*code applied to the every individual productbox (included the productLookButton)*/
-            height: 1vh;
-            padding: 10px;
-            font-size: 11px;
-            color: #FFC640;
+        .Heading {
+            font-size: 20px;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 700;
+            color: #2F3841;
+        }
+        
+        .Action {
+            font-size: 14px;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 600;
+            color: #E44C4C;
+            cursor: pointer;
+            border-bottom: 1px solid #E44C4C;
+        }
+        
+        .Cart-Container {
+            width: 91%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 25px 40px #1687d933;
+            margin-right: 0;
+            margin-top: 86px;
+            margin-left: 50px;
+            padding-bottom: 20rem;
+        }
+        
+        .Cart-Items {
+            margin: auto;
+            width: 90%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        li {
+            margin: 5px;
+        }
+        
+        .image-box {
+            width: 15%;
             text-align: center;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         }
         
-        #product1,
-        #product2,
-        #product3,
-        #product4,
-        #product5,
-        #product6,
-        #product7,
-        #product8,
-        #product9 {
-            /*code applied to the every individual productbox (productLookButton NOT included)*/
-            width: 10vw;
-            border: 2px solid black;
-            margin: 69px 0 0;
-            background-color: white;
+        .about {
+            height: 100%;
         }
         
-        .productImg {
-            /*code applied to the every products images*/
-            max-width: fit-content;
+        .title {
+            padding-top: 35px;
+            line-height: 10px;
+            font-size: 20px;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 800;
+            color: #202020;
         }
         
-        span.productText {
-            /*code applied to the every products texts*/
-            font-size: 11px;
-            color: #FFC640;
-            position: relative;
-            top: 0;
+        .subtitle {
+            line-height: 10px;
+            font-size: 15px;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 600;
+            color: #909090;
         }
         
-        .productLookButton {
-            /*code applied to the every products button*/
-            border: 3px solid black;
-            font-weight: bold;
+        .counter {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .prices {
+            height: 100%;
+            text-align: right;
+        }
+        
+        .remove {
+            padding-top: 5px;
+            font-size: 14px;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 600;
+            color: #E44C4C;
+            cursor: pointer;
+        }
+        
+        .hr1 {
+            width: 90%;
+            float: right;
+            margin-right: 5%;
+            margin-top: 28px;
+        }
+        
+        .hr2 {
+            width: 10%;
+            float: right;
+            margin-right: 17%;
+        }
+        
+        .checkout {
+            float: right;
+            width: 22%;
+            justify-content: space-between;
+            line-height: 3rem;
+        }
+        
+        .amountText {
             font-size: 10px;
-            overflow: hidden;
-            margin-top: 30px;
-            margin-left: 0;
-            background-color: #182024;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 700;
+            color: #202020;
+            flex-wrap: nowrap;
+            display: contents;
         }
         
-        .productLookButton:hover {
-            /*code applied for the hovering effect of every products button*/
-            background-color: black;
+        .items {
+            font-size: 10px;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 500;
+            color: #909090;
+            line-height: 10px;
+            margin-left: 92%;
+        }
+        
+        .amount {
+            font-size: 15px;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 900;
+            color: #202020;
+        }
+        
+        .checkoutAmount {
+            font-size: 12px;
+            font-family: ‘Open Sans’, sans-serif;
+            font-weight: 900;
+            color: #202020;
+            margin-top: 0;
+            display: contents;
+        }
+        
+        .sButton {
+            border: 3px solid #033483;
+            font-weight: bold;
+            font-size: 13px;
+            overflow: hidden;
+            border-radius: inherit;
+            padding: revert;
+            float: right;
+            margin-top: 25%;
+            margin-right: 6%;
+        }
+        
+        .sButton:hover {
+            background-color: #033483;
             color: white;
         }
         
-        .productLookButton a {
-            /*code applied to every products buttonlink*/
-            color: #FFC640;
+        ul.checkout {
+            display: flex;
+            margin-right: -24%;
         }
         
-        .productLookButton a:hover {
-            /*code applied for the hovering effect of every products buttonlink*/
-            color: #fff;
+        li {
+            margin-top: 10px;
+        }
+        
+        li.amountText {
+            font-size: 12px;
+            display: contents;
+        }
+        
+        p {
+            display: inline-flex;
+            margin-left: 10px;
+        }
+        
+        [alt="noStyle1"] {
+            text-decoration: none;
+            color: white;
         }
         /*This code is for the footer*/
         
@@ -341,65 +420,81 @@
         </div>
     </header>
 
-    <!--This code is for the middle part of the page-->
-    <section id="bodysection">
-        <details class="sortList">
-            <summary class="sortListHead">Sorteer</summary>
-            <button class="sortListItemButton"><a href="#" class="sortListLink">Populairste</a></button>
-            <button class="sortListItemButton"><a href="#" class="sortListLink">Prijs: Laag - Hoog</a></button>
-            <button class="sortListItemButton"><a href="#" class="sortListLink">Prijs: Hoog - Laag</a></button>
-        </details>
-        <!--products-->
-        <table id="productsDiv">
-            <thead>
-                <tr class="product">
-                    <td id="product1"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/bijenkast.jpg" alt="Bijenkast Groot"><span class="productText">Bijenkast Groot <br> &#8364 2.999,99</span>
-                    </td>
-                    <button class="productLookButton"><a href="productPage1.html">Product bekijken</a></button></tr>
+    <section class="bodysection">
+        <div class="Cart-Container">
+            <div class="Header">
+                <h3 class="Heading">Mijn winkelmand</h3>
+                <h5 class="Action">Verwijder alles</h5>
+            </div>
 
-                <tr class="product">
-                    <div id="product2"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/bijenkast.jpg" alt="Bijenkast Middel"><span class="productText">Bijenkast Middel <br> &#8364 1.799,99</span>
-                        </td>
-                        <button class="productLookButton"><a href="productPage2.html">Product bekijken</a></button></tr>
+            <div class="Cart-Items">
+                <div class="image-box">
+                    <img src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/bijenkast.jpg" style=height:55px alt="Bijenkast Groot">
+                </div>
+                <div class="about">
+                    <h1 class="title">Bijenkast Groot</h1>
+                    <h3 class="subtitle">550 x 550 x 150</h3>
+                </div>
+                <div class="counter"></div>
+                <div class="prices"></div>
+                <div class="counter">
+                    <div><label>
+        <input type="number" class="myNumber" value="1" style="
+      width: 30%;">
+      </label></div>
 
-                <tr class="product">
-                    <td id="product3"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/bijenkast.jpg" alt="Bijenkast Klein"><span class="productText">Bijenkast Klein <br> &#8364 299,99</span>
-                    </td>
-                    <button class="productLookButton"><a href="productPage3.html">Product bekijken</a></button></div>
-            </thead>
-            <tbody>
-                <tr class="product">
-                    <td id="product4"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/FRIENDLY%20FLOWERS%20Bloemenzaden.png" alt="Bloemenzaden van FRIENDLY FLOWERS"><span class="productText">Bloemenzaden van FRIENDLY FLOWERS <br> &#8364 10,65</span>
-                    </td>
-                    <button class="productLookButton"><a href="productPage4.html">Product bekijken</a></button></tr>
+                    <div class="prices">
+                        <div class="amount">&#8364 2.999,99</div>
+                        <div class="remove"><u>Verwijder</u></div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr1">
+            <div class="Cart-Items">
+                <div class="image-box">
+                    <img src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Bijenhoning%20van%20Blutenhonig.png" style=height:55px alt="Bijenhoning van Blütenhonig">
+                </div>
+                <div class="about">
+                    <h1 class="title">Bijenhoning van Blütenhonig</h1>
+                    <h3 class="subtitle">125 gram</h3>
+                </div>
+                <div class="counter"></div>
+                <div class="prices"></div>
+                <div class="counter">
+                    <div><label>
+        <input type="number" class="myNumber" value="1" style="
+      width: 30%;">
+      </label></div>
 
-                <tr class="product">
-                    <td id="product5"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Horti%20Tops%20Bloemenzaden.png" alt="Horti Tops Bloemenzaden"><span class="productText">Bloemenzaden van Horti Tops <br> &#8364 5,22</span>
-                    </td>
-                    <button class="productLookButton"><a href="productPage5.html">Product bekijken</a></button></tr>
 
-                <tr class="product">
-                    <td id="product6"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Sluis%20Garden%20bloemenzaden.png" alt="Bloemenzaden van Sluis Garden"><span class="productText">Bloemenzaden van Sluis Garden <br> &#8364 8,47</span>
-                    </td>
-                    <button class="productLookButton"><a href="productPage6.html">Product bekijken</a></button></tr>
-            </tbody>
-            <tfoot>
-                <tr class="product">
-                    <td id="product7"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Bijenhoning%20van%20Langnese.png" alt="Bijenhoning van Langnese"><span class="productText">Bijenhoning van Langnese <br> &#8364 6,61</span>
-                    </td>
-                    <button class="productLookButton"><a href="productPage7.html">Product bekijken</a></button></tr>
+                    <div class="prices">
+                        <div class="amount">&#8364 9,50</div>
+                        <div class="remove"><u>Verwijder</u></div>
+                    </div>
+                </div>
 
-                <tr class="product">
-                    <td id="product8"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Bijenhoning%20van%20BIJENHUIS.png" alt="Bijenhoning van BIJENHUIS"><span class="productText">Bijenhoning van BIJENHUIS <br> &#8364 9,92</span>
-                    </td>
-                    <button class="productLookButton"><a href="productPage8.html">Product bekijken</a></button></tr>
+            </div>
+            <div class="items">2 producten</div>
 
-                <tr class="product">
-                    <td id="product9"><img class="productImg" src="https://i484476.hera.fhict.nl/Wellbeeing%20webshop/img/Bijenhoning%20van%20Blutenhonig.png" alt="Bijenhoning van BlÃ¼tenhonig"><span class="productText">Bijenhoning van Bl&uuml;tenhonig <br> &#8364 9,50</span>
-                    </td>
-                    <button class="productLookButton"><a href="productPage9.html">Product bekijken</a></button></tr>
-            </tfoot>
-        </table>
+            <hr class="hr2">
+            <ul class="checkout">
+
+                <li class="amountText">Totaal excl. btw.</li>
+                <p class="checkoutAmount">&#8364 3.009,49</p>
+                <li class="amountText">btw. 21%</li>
+                <p class="checkoutAmount">&#8364 631,99</p>
+                <li class="amountText">Bezorgkosten</li>
+                <p class="checkoutAmount">&#8364 2,50</p>
+                <li class="amountText">Totaalbedrag</li>
+                <p class="checkoutAmount">&#8364 3.646,98</p>
+            </ul>
+            <br>
+            <button class="sButton">Bestel</button>
+
+
+
+
+        </div>
     </section>
 
     <footer></footer>
