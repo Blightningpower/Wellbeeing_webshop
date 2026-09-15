@@ -1,0 +1,142 @@
+dialog {
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 35px;
+  max-width: 850px;
+  width: calc(100% - 32px);
+  max-height: 90dvh;
+  box-shadow: 0 20px 100px var(--shadow);
+}
+dialog::backdrop {
+  background: var(--overlay);
+}
+.close {
+  font-size: 29px;
+  background: none;
+  border: 0;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  z-index: 2;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+.detail-grid img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.detail-grid h2 {
+  font-size: 36px;
+}
+.detail-grid p {
+  line-height: 1.8;
+}
+.detail-grid .price {
+  font-size: 23px;
+  margin: 20px 0;
+}
+.detail-grid .button {
+  width: 100%;
+}
+.cart-dialog {
+  max-width: 600px;
+}
+.dialog-heading {
+  margin-bottom: 25px;
+}
+.dialog-heading h2 {
+  font-size: 32px;
+}
+.cart-row {
+  display: grid;
+  grid-template-columns: 65px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+}
+.cart-row img {
+  width: 65px;
+  height: 75px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.cart-row h3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quantity button {
+  border: 1px solid var(--line);
+  background: transparent;
+  width: 28px;
+  height: 28px;
+}
+.remove {
+  border: 0;
+  background: none;
+  text-decoration: underline;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 26px;
+}
+.checkout-note {
+  font-size: 12px;
+  line-height: 1.7;
+  background: var(--surface-soft);
+  padding: 16px;
+  margin-top: 20px;
+}
+.toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  background: var(--ink);
+  color: var(--surface-white);
+  border-radius: 6px;
+  padding: 15px 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+  z-index: 10;
+  max-width: 90%;
+  text-align: center;
+}
+.toast.visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.skip {
+  position: fixed;
+  top: -100px;
+  left: 12px;
+  background: var(--surface-white);
+  padding: 15px;
+  z-index: 20;
+}
+.skip:focus {
+  top: 12px;
+}
+body:has(dialog[open]) {
+  overflow: hidden;
+}

@@ -1,0 +1,84 @@
+.announcement {
+  text-align: center;
+  background: var(--ink);
+  color: var(--on-dark);
+  font-size: 11px;
+  letter-spacing: 0.45px;
+  padding: 11px;
+}
+.announcement span {
+  margin-left: 12px;
+  color: var(--brand-yellow);
+}
+.header {
+  height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.logo {
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: -1.6px;
+  display: flex;
+  align-items: center;
+}
+.logo-image {
+  width: 78px;
+  height: auto;
+  display: block;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+.brand-name {
+  color: var(--ink);
+}
+nav {
+  display: flex;
+  gap: 34px;
+  height: 100%;
+  align-items: center;
+}
+nav a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 13px;
+}
+nav a.active:after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 27px;
+  left: 0;
+  right: 0;
+  background: var(--ink);
+}
+.header-actions {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.icon-button,
+.cart-button {
+  border: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+}
+.cart-button {
+  font-size: 12px;
+}
+#cart-count {
+  background: var(--brand-yellow);
+  border-radius: 50%;
+  min-width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+}

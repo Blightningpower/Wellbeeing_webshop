@@ -1,0 +1,92 @@
+export const products = [
+  {
+    id: 3,
+    name: 'Bijenkast Klein',
+    category: 'kasten',
+    image: 'bijenkast.jpg',
+    price: 29999,
+    subtitle: 'Een eigen plek voor de bijen',
+    description: 'Een compacte houten bijenkast. Een klein begin voor jouw eigen bijenplek.',
+    tag: 'Een klein begin',
+  },
+  {
+    id: 4,
+    name: 'Friendly Flowers',
+    category: 'zaden',
+    image: 'bloemenzaden-friendly-flowers.png',
+    price: 1065,
+    subtitle: 'Bloemenzaden voor een tuin vol leven',
+    description:
+      'Geef bloemen de ruimte met deze bloemenzaden van Friendly Flowers. Bekijk de verpakking voor het zaaiadvies.',
+    tag: 'Laat het bloeien',
+  },
+  {
+    id: 8,
+    name: 'Honing van Bijenhuis',
+    category: 'honing',
+    image: 'honing-bijenhuis.png',
+    price: 992,
+    subtitle: 'Een zoet moment, van de bij',
+    description:
+      'Bijenhoning van Bijenhuis. Voor bij het ontbijt, in de yoghurt of als zoete toevoeging in de keuken.',
+    tag: 'Zoet van de bij',
+  },
+  {
+    id: 2,
+    name: 'Bijenkast Middel',
+    category: 'kasten',
+    image: 'bijenkast.jpg',
+    price: 179999,
+    subtitle: 'Meer ruimte voor jouw bijenvolk',
+    description: 'Een middelgrote houten bijenkast voor jouw bijenplek.',
+  },
+  {
+    id: 5,
+    name: 'Horti Tops bloemenzaden',
+    category: 'zaden',
+    image: 'bloemenzaden-horti-tops.png',
+    price: 522,
+    subtitle: 'Breng kleur in je groene hoekje',
+    description:
+      'Bloemenzaden van Horti Tops. Volg het zaaiadvies op de verpakking voor jouw bloemenplek.',
+  },
+  {
+    id: 7,
+    name: 'Honing van Langnese',
+    category: 'honing',
+    image: 'honing-langnese.png',
+    price: 661,
+    subtitle: 'Voor de kleine genietmomenten',
+    description:
+      'Bijenhoning van Langnese. Een zoete toevoeging aan je ontbijt of favoriete gerecht.',
+  },
+  {
+    id: 1,
+    name: 'Bijenkast Groot',
+    category: 'kasten',
+    image: 'bijenkast.jpg',
+    price: 299999,
+    subtitle: 'Alle ruimte om te groeien',
+    description: 'Een grote houten bijenkast voor een ruimere bijenplek.',
+  },
+  {
+    id: 6,
+    name: 'Sluis Garden bloemenzaden',
+    category: 'zaden',
+    image: 'bloemenzaden-sluis-garden.png',
+    price: 847,
+    subtitle: 'Geef je tuin een beetje extra bloei',
+    description:
+      'Bloemenzaden van Sluis Garden. Bekijk de verpakking voor de zaaitijd en verzorging.',
+  },
+  {
+    id: 9,
+    name: 'Blütenhonig',
+    category: 'honing',
+    image: 'honing-blutenhonig.png',
+    price: 950,
+    subtitle: 'Een potje zoete verwennerij',
+    description: 'Bijenhoning voor een zoet moment aan tafel.',
+  },
+];
+export const categories = { kasten: 'Bijenkasten', zaden: 'Bloemenzaden', honing: 'Honing' };

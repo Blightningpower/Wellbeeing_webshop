@@ -1,0 +1,102 @@
+.story {
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  gap: 85px;
+  align-items: center;
+  padding: 45px 0 75px;
+  border-top: 1px solid var(--line);
+}
+.story-art {
+  color: var(--on-dark);
+  background: var(--ink);
+  border-radius: 7px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.story-art > span {
+  font-size: 130px;
+  line-height: 1;
+  color: var(--brand-yellow);
+}
+.story-art > p {
+  font:
+    italic 57px Georgia,
+    serif;
+  letter-spacing: -2px;
+  margin: 15px 0;
+}
+.story-art small {
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+.story-copy h2 {
+  font-size: 35px;
+  margin-bottom: 23px;
+}
+.story-copy > p:not(.eyebrow) {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--muted);
+  max-width: 420px;
+}
+.text-link {
+  display: inline-flex;
+  gap: 28px;
+  font-size: 12px;
+  border-bottom: 1px solid;
+  padding-bottom: 8px;
+  margin-top: 9px;
+}
+.bee-note {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border-radius: 6px;
+  background: var(--brand-yellow);
+  padding: 34px 38px;
+}
+.bee-note > span {
+  font-size: 65px;
+}
+.bee-note .eyebrow {
+  margin-bottom: 7px;
+}
+.bee-note h2 {
+  font-size: 26px;
+  letter-spacing: -0.8px;
+}
+.bee-note p:last-child {
+  font-size: 12px;
+  margin: 10px 0 0;
+  color: var(--ink);
+}
+.bee-note .button {
+  margin-left: auto;
+  white-space: nowrap;
+}
+footer {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 45px 0;
+  flex-wrap: wrap;
+}
+footer .logo {
+  font-size: 24px;
+}
+footer .logo-image {
+  width: 60px;
+}
+footer p,
+footer a:not(.logo),
+footer small {
+  font-size: 10px;
+  color: var(--muted);
+  margin: 0;
+}
+footer a:not(.logo) {
+  margin-left: auto;
+}
